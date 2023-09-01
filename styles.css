@@ -1,3 +1,9 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #22254B;
+  color: white;
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+$backgroundColor: #22254B;
+$textColor: white;
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: $backgroundColor;
+    color: $textColor;
+}
