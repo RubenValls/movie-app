@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 $backgroundColor: #22254B;
+$navColor: #373B69;
 $textColor: white;
 
 body{
@@ -7,4 +8,38 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: $backgroundColor;
     color: $textColor;
+
+    .container{
+        display: flex;
+
+        nav{
+            width: 100vw;
+            height: 100px;
+            background-color: $navColor;
+            display: flex;
+            justify-content: flex-end;
+            align-self: flex-end;
+            margin: auto;
+            
+            #movie-search{
+                margin: 30px;
+                min-width: 200px;
+                border: 2px solid $backgroundColor;
+                background-color: $navColor;
+                color: $textColor;
+                border-radius: 20px;
+                padding-left: 20px;
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+                &:focus{
+                    background-color: $backgroundColor;
+                    color: white;
+                    outline: none;
+                }
+            }
+        }
+    }
 }

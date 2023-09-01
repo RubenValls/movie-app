@@ -5,5 +5,34 @@ body {
   background-color: #22254B;
   color: white;
 }
+body .container {
+  display: flex;
+}
+body .container nav {
+  width: 100vw;
+  height: 100px;
+  background-color: #373B69;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  margin: auto;
+}
+body .container nav #movie-search {
+  margin: 30px;
+  min-width: 200px;
+  border: 2px solid #22254B;
+  background-color: #373B69;
+  color: white;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+body .container nav #movie-search:hover {
+  cursor: pointer;
+}
+body .container nav #movie-search:focus {
+  background-color: #22254B;
+  color: white;
+  outline: none;
+}
 
 /*# sourceMappingURL=styles.css.map */
