@@ -50,10 +50,37 @@ body .container .movies-container {
   margin: 100px auto 20px auto;
 }
 body .container .movies-container .movie-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   width: 250px;
+  max-width: 250px;
   height: 500px;
+  max-height: 500px;
   margin: 10px;
   background-color: #373B69;
+}
+body .container .movies-container .movie-card img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+body .container .movies-container .movie-card .movie-info {
+  width: 225px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+}
+body .container .movies-container .movie-card .movie-info .movie-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 20px auto auto;
+  height: 30px;
+  width: 30px;
+  background-color: #22254B;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */
