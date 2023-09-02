@@ -22,6 +22,8 @@ body{
             margin: auto;
             
             #movie-search{
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.05em;
                 margin: 30px;
                 min-width: 200px;
                 border: 2px solid $backgroundColor;
@@ -29,6 +31,10 @@ body{
                 color: $textColor;
                 border-radius: 20px;
                 padding-left: 20px;
+
+                &::placeholder{
+                    color: #7378C5;
+                }
 
                 &:hover{
                     cursor: pointer;

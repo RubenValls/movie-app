@@ -18,6 +18,8 @@ body .container nav {
   margin: auto;
 }
 body .container nav #movie-search {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.05em;
   margin: 30px;
   min-width: 200px;
   border: 2px solid #22254B;
@@ -25,6 +27,9 @@ body .container nav #movie-search {
   color: white;
   border-radius: 20px;
   padding-left: 20px;
+}
+body .container nav #movie-search::placeholder {
+  color: #7378C5;
 }
 body .container nav #movie-search:hover {
   cursor: pointer;
