@@ -19,6 +19,7 @@ body{
             width: 100vw;
             height: 80px;
             background-color: $navColor;
+            border-bottom: 2px solid $backgroundColor;
             display: flex;
             justify-content: flex-end;
             align-self: flex-end;

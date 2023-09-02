@@ -15,6 +15,7 @@ body .container nav {
   width: 100vw;
   height: 80px;
   background-color: #373B69;
+  border-bottom: 2px solid #22254B;
   display: flex;
   justify-content: flex-end;
   align-self: flex-end;
