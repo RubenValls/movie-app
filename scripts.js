@@ -22,10 +22,10 @@ const printMovies = (movies = []) => {
                             : movie.vote_average >= 8
                                 ? '#90EE90'
                                 : '#FFA500'
-        moviesContainer.innerHTML += `<div class="movie-card" id="${movie.original_title}">
+        moviesContainer.innerHTML += `<div class="movie-card" id="${movie.title}">
             <img src="${IMG_PATH + movie.poster_path}" alt="test">
             <div class="movie-info">
-                <h3>${movie.original_title}</h3>
+                <h3>${movie.title}</h3>
                 <div class="movie-rating" style="color: ${ratingColor}">${movie.vote_average.toFixed(1)}</div>
             </div>
             </div>`
