@@ -11,10 +11,13 @@ body{
 
     .container{
         display: flex;
+        flex-direction: column;
+        overflow: hidden;
 
         nav{
+            position: fixed;
             width: 100vw;
-            height: 100px;
+            height: 80px;
             background-color: $navColor;
             display: flex;
             justify-content: flex-end;
@@ -24,7 +27,7 @@ body{
             #movie-search{
                 font-family: 'Poppins', sans-serif;
                 font-size: 1.05em;
-                margin: 30px;
+                margin: 20px;
                 min-width: 200px;
                 border: 2px solid $backgroundColor;
                 background-color: $navColor;
@@ -42,9 +45,24 @@ body{
 
                 &:focus{
                     background-color: $backgroundColor;
-                    color: white;
+                    color: $textColor;
                     outline: none;
                 }
+            }
+        }
+
+        .movies-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 100px auto 20px auto;
+
+            .movie-card{
+                width: 250px;
+                height: 500px;
+                margin: 10px;
+                background-color: $navColor;
             }
         }
     }
