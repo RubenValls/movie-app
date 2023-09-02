@@ -78,7 +78,7 @@ body .container .movies-container .movie-card .movie-info .movie-rating {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto 0px auto 10px;
+  margin: auto 0px auto auto;
   min-height: 30px;
   min-width: 30px;
   padding: 2px;
