@@ -66,6 +66,8 @@ body .container .movies-container .movie-card img {
   object-fit: cover;
   width: 100%;
   height: auto;
+  max-height: 75%;
+  min-height: 75%;
 }
 body .container .movies-container .movie-card .movie-info {
   width: 270px;
