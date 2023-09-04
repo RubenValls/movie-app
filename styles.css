@@ -64,10 +64,10 @@ body .container .movies-container .movie-card {
   margin: 10px;
   background-color: #373B69;
 }
-body .container .movies-container .movie-card:hover .movie-overview {
+body .container .movies-container .movie-card:hover .movie-overview, body .container .movies-container .movie-card:active .movie-overview {
   max-height: 600px;
 }
-body .container .movies-container .movie-card:not(:hover) .movie-overview {
+body .container .movies-container .movie-card:not(:hover) .movie-overview, body .container .movies-container .movie-card:not(:active) .movie-overview {
   max-height: 0;
 }
 body .container .movies-container .movie-card .movie-overview {
