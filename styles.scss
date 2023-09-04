@@ -73,13 +73,13 @@ body{
                 margin: 10px;
                 background-color: $navColor;
 
-                &:hover, &:active{
+                &:hover{
                     .movie-overview{
                         max-height: 600px;
                     }
                 }
 
-                &:not(:hover), &:not(:active){
+                &:not(:hover){
                     .movie-overview{
                         max-height: 0;
                     }
