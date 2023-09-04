@@ -11,7 +11,6 @@ const getMovies = (API = API_URL, query = '') => {
         .then(response => response.json())
         .then(data => {
             movies = [...data.results];
-            console.log(movies);
             printMovies(movies);
         })
         .catch(error => console.log(error));
@@ -46,7 +45,6 @@ const printMovies = (movies = []) => {
 }
 
 getMovies()
-console.log(overviewIcon)
 
 searchInput.addEventListener('keydown', (event) => {
     if(event.keyCode === 13){
