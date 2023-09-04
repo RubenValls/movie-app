@@ -12,6 +12,7 @@ body .container {
 }
 body .container nav {
   position: fixed;
+  z-index: 1;
   width: 100vw;
   height: 80px;
   background-color: #373B69;
@@ -52,6 +53,7 @@ body .container .movies-container {
   margin: 100px auto 20px auto;
 }
 body .container .movies-container .movie-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -61,6 +63,29 @@ body .container .movies-container .movie-card {
   max-height: 600px;
   margin: 10px;
   background-color: #373B69;
+}
+body .container .movies-container .movie-card:hover .movie-overview {
+  max-height: 600px;
+}
+body .container .movies-container .movie-card:not(:hover) .movie-overview {
+  max-height: 0;
+}
+body .container .movies-container .movie-card .movie-overview {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 0;
+  transition: max-height 0.75s ease-out;
+  overflow: hidden;
+  background-color: white;
+  color: black;
+}
+body .container .movies-container .movie-card .movie-overview p {
+  text-align: justify;
+  font-size: 0.95em;
+  padding: 15px;
 }
 body .container .movies-container .movie-card img {
   object-fit: cover;

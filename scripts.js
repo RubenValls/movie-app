@@ -10,7 +10,7 @@ const getMovies = (API = API_URL, query = '') => {
         .then(response => response.json())
         .then(data => {
             movies = [...data.results];
-            console.log(movies)
+            console.log(movies);
             printMovies(movies);
         })
         .catch(error => console.log(error));
@@ -32,6 +32,10 @@ const printMovies = (movies = []) => {
         moviesContainer.innerHTML += `<div class="movie-card" id="${movie.title}">
             <img src="${movie.poster_path ? IMG_PATH + movie.poster_path : 'assets/no-image.png'}" alt="test">
             <div class="movie-info">
+                <div class="movie-overview">
+                    <h3>Overview</h3>
+                    <p>${movie.overview}</p>
+                </div>
                 <h3>${movie.title}</h3>
                 <div class="movie-rating" style="color: ${ratingColor}">${movie.vote_average.toFixed(1)}</div>
             </div>
