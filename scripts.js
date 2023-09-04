@@ -4,8 +4,6 @@ const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?sort_by=popularity
 
 const searchInput = document.querySelector('#movie-search');
 const searchIcon = document.querySelector('#search-icon');
-const overviewIcon = document.querySelector('#overview-icon');
-let overview = false;
 let movies = [];
 
 const getMovies = (API = API_URL, query = '') => {
@@ -48,6 +46,7 @@ const printMovies = (movies = []) => {
 }
 
 getMovies()
+console.log(overviewIcon)
 
 searchInput.addEventListener('keydown', (event) => {
     if(event.keyCode === 13){
@@ -59,15 +58,4 @@ searchInput.addEventListener('keydown', (event) => {
 searchIcon.addEventListener('click', () => {
     searchMovies(searchInput.value)
     searchInput.value = '';
-})
-
-overviewIcon.addEventListener('click', () => {
-    if(!overview){
-        searchIcon.classList = 'fa-solid fa-sort-down fa-lg';
-        searchIcon.style.color = 'black';
-    }else{
-        searchIcon.classList = 'fa-solid fa-sort-up fa-lg';
-        searchIcon.style.color = 'white';
-    }
-    overview = !overview;
 })
