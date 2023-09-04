@@ -37,12 +37,20 @@ body .container nav #movie-search::placeholder {
   color: #7378C5;
 }
 body .container nav #movie-search:hover {
-  cursor: pointer;
+  cursor: auto;
 }
 body .container nav #movie-search:focus {
   background-color: #22254B;
   color: white;
   outline: none;
+}
+body .container nav i {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+body .container nav i:hover {
+  cursor: pointer;
 }
 body .container .movies-container {
   max-width: 1800px;

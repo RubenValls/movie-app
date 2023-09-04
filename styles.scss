@@ -42,13 +42,23 @@ body{
                 }
 
                 &:hover{
-                    cursor: pointer;
+                    cursor: auto;
                 }
 
                 &:focus{
                     background-color: $backgroundColor;
                     color: $textColor;
                     outline: none;
+                }
+            }
+
+            i{
+                position: absolute;
+                right: 40px;
+                top: 40px;
+            
+                &:hover{
+                    cursor: pointer;
                 }
             }
         }

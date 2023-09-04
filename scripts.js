@@ -2,7 +2,8 @@ const API_URL = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.
 const IMG_PATH = 'https://image.tmdb.org/t/p/w1280'
 const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?sort_by=popularity.desc&api_key=3fd2be6f0c70a2a598f084ddfb75487c&page=1&query='
 
-const searchInput = document.querySelector('#movie-search')
+const searchInput = document.querySelector('#movie-search');
+const searchIcon = document.querySelector('#search-icon');
 let movies = [];
 
 const getMovies = (API = API_URL, query = '') => {
@@ -50,4 +51,9 @@ searchInput.addEventListener('keydown', (event) => {
         searchMovies(searchInput.value)
         searchInput.value = '';
     }
+})
+
+searchIcon.addEventListener('click', () => {
+    searchMovies(searchInput.value)
+    searchInput.value = '';
 })
