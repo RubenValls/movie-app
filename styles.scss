@@ -16,7 +16,7 @@ body{
 
         nav{
             position: fixed;
-            z-index: 1;
+            z-index: 2;
             width: 100vw;
             height: 80px;
             background-color: $navColor;
@@ -123,6 +123,7 @@ body{
                 }
 
                 .movie-info{
+                    position: relative;
                     width: 270px;
                     display: flex;
                     justify-content: flex-start;
@@ -140,6 +141,13 @@ body{
                         background-color: $backgroundColor;
                         font-weight: bold;
                     }
+                }
+
+                i{
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 15;
+                    left: 50%;
                 }
             }
         }

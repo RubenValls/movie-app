@@ -4,6 +4,8 @@ const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?sort_by=popularity
 
 const searchInput = document.querySelector('#movie-search');
 const searchIcon = document.querySelector('#search-icon');
+const overviewIcon = document.querySelector('#overview-icon');
+let overview = false;
 let movies = [];
 
 const getMovies = (API = API_URL, query = '') => {
@@ -33,13 +35,14 @@ const printMovies = (movies = []) => {
         moviesContainer.innerHTML += `<div class="movie-card" id="${movie.title}">
             <img src="${movie.poster_path ? IMG_PATH + movie.poster_path : 'assets/no-image.png'}" alt="test">
             <div class="movie-info">
-                <div class="movie-overview">
-                    <h3>Overview</h3>
-                    <p>${movie.overview}</p>
-                </div>
                 <h3>${movie.title}</h3>
                 <div class="movie-rating" style="color: ${ratingColor}">${movie.vote_average.toFixed(1)}</div>
             </div>
+            <i class="fa-solid fa-sort-up fa-lg" style="color: white;" id="overview-icon"></i>
+            <div class="movie-overview">
+                    <h3>Overview</h3>
+                    <p>${movie.overview}</p>
+                </div>
             </div>`
     })
 }
@@ -56,4 +59,15 @@ searchInput.addEventListener('keydown', (event) => {
 searchIcon.addEventListener('click', () => {
     searchMovies(searchInput.value)
     searchInput.value = '';
+})
+
+overviewIcon.addEventListener('click', () => {
+    if(!overview){
+        searchIcon.classList = 'fa-solid fa-sort-down fa-lg';
+        searchIcon.style.color = 'black';
+    }else{
+        searchIcon.classList = 'fa-solid fa-sort-up fa-lg';
+        searchIcon.style.color = 'white';
+    }
+    overview = !overview;
 })
