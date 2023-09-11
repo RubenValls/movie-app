@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-$backgroundColor: #22254B;
-$navColor: #373B69;
+$backgroundColor: #151515ee;
+$navColor: #505050;
 $textColor: white;
 
 body{
@@ -38,7 +38,7 @@ body{
                 padding-left: 20px;
 
                 &::placeholder{
-                    color: #7378C5;
+                    color: $textColor;
                 }
 
                 &:hover{
@@ -52,7 +52,7 @@ body{
                 }
             }
 
-            i{
+            #search-icon{
                 position: absolute;
                 right: 40px;
                 top: 40px;
@@ -60,6 +60,14 @@ body{
                 &:hover{
                     cursor: pointer;
                 }
+            }
+
+            #movie-icon{
+                position: absolute;
+                font-size: 40px;
+                left: 100px;
+                top: 40px;
+                color: $backgroundColor;
             }
         }
 
@@ -105,7 +113,7 @@ body{
                     transition: max-height 0.75s ease-out;  
                     overflow: hidden;
                     background-color: white;
-                    color: black;
+                    color: $backgroundColor;
 
                     p{
                         text-align: justify;

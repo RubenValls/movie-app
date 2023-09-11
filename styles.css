@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #22254B;
+  background-color: rgba(21, 21, 21, 0.9333333333);
   color: white;
 }
 body .container {
@@ -15,8 +15,8 @@ body .container nav {
   z-index: 2;
   width: 100vw;
   height: 80px;
-  background-color: #373B69;
-  border-bottom: 2px solid #22254B;
+  background-color: #505050;
+  border-bottom: 2px solid rgba(21, 21, 21, 0.9333333333);
   display: flex;
   justify-content: flex-end;
   align-self: flex-end;
@@ -27,30 +27,37 @@ body .container nav #movie-search {
   font-size: 1.05em;
   margin: 20px;
   min-width: 200px;
-  border: 2px solid #22254B;
-  background-color: #373B69;
+  border: 2px solid rgba(21, 21, 21, 0.9333333333);
+  background-color: #505050;
   color: white;
   border-radius: 20px;
   padding-left: 20px;
 }
 body .container nav #movie-search::placeholder {
-  color: #7378C5;
+  color: white;
 }
 body .container nav #movie-search:hover {
   cursor: auto;
 }
 body .container nav #movie-search:focus {
-  background-color: #22254B;
+  background-color: rgba(21, 21, 21, 0.9333333333);
   color: white;
   outline: none;
 }
-body .container nav i {
+body .container nav #search-icon {
   position: absolute;
   right: 40px;
   top: 40px;
 }
-body .container nav i:hover {
+body .container nav #search-icon:hover {
   cursor: pointer;
+}
+body .container nav #movie-icon {
+  position: absolute;
+  font-size: 40px;
+  left: 100px;
+  top: 40px;
+  color: rgba(21, 21, 21, 0.9333333333);
 }
 body .container .movies-container {
   max-width: 1800px;
@@ -70,7 +77,7 @@ body .container .movies-container .movie-card {
   height: 600px;
   max-height: 600px;
   margin: 10px;
-  background-color: #373B69;
+  background-color: #505050;
 }
 body .container .movies-container .movie-card:hover .movie-overview {
   max-height: 600px;
@@ -88,7 +95,7 @@ body .container .movies-container .movie-card .movie-overview {
   transition: max-height 0.75s ease-out;
   overflow: hidden;
   background-color: white;
-  color: black;
+  color: rgba(21, 21, 21, 0.9333333333);
 }
 body .container .movies-container .movie-card .movie-overview p {
   text-align: justify;
@@ -118,7 +125,7 @@ body .container .movies-container .movie-card .movie-info .movie-rating {
   min-height: 30px;
   min-width: 30px;
   padding: 2px;
-  background-color: #22254B;
+  background-color: rgba(21, 21, 21, 0.9333333333);
   font-weight: bold;
 }
 body .container .movies-container .movie-card i {
